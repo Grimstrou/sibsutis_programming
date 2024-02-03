@@ -1,0 +1,188 @@
+#include <graphics.h>
+#include <stdlib.h>
+#include <time.h>
+#include <string.h>
+#include <fstream>
+
+char result[10];
+char die = 0;
+int initialCount = 0; 
+
+// сохранение в файл
+void saveMaxCount(int maxCount) {
+    std::ofstream file("maxCount.txt");
+    if (file.is_open()) {
+        file << maxCount;
+        file.close();
+    }
+}
+
+// выгрузка из файла
+int loadMaxCount() {
+    int maxCount = 0;
+    std::ifstream file("maxCount.txt");
+    if (file.is_open()) {
+        file >> maxCount;
+        file.close();
+    }
+    return maxCount;
+}
+
+void drowback(float x, float y, int color)
+{
+    setcolor(color);
+    setfillstyle(1, color); // Устанавливает цвет и стиль закраски
+    bar(x, y, x + 100, y + 100); //зарисовка прямоугольника
+}
+
+void drowfrukt(float x, float y, int color)
+{
+    setfillstyle(1, color);
+    setcolor(color);
+    circle(x, y, 50); //рисует окружность заданного радиуса
+    floodfill(x + 1, y + 0.2, color); //заполняет ограниченную область
+}
+
+void schetchic(int count, int maxCount, int color)
+{
+    setcolor(color);
+    settextstyle(DEFAULT_FONT, 0, 1); //устанавливает шрифт, стиль и коэффициент увеличения шрифта
+    itoa(count, result, 10); //Преобразует целое число в строку
+    outtextxy(750, 69, "count:"); //Вывод текста на экран
+    outtextxy(820, 69, result); //тоже самое что и выше только уже переменная
+
+    itoa(maxCount, result, 10);
+    outtextxy(750, 89, "max:");
+    outtextxy(820, 89, result);
+}
+
+void deid(int color)
+{
+    cleardevice(); //отчищает экран
+    setcolor(color);
+    settextstyle(TRIPLEX_SCR_FONT, 0, 26);
+    outtextxy(200, 200, "You dead");
+
+    settextstyle(SIMPLEX_FONT, 0, 2);
+    outtextxy(400, 400, "press R to restart");
+}
+
+void realy(int color)
+{
+    cleardevice();
+    setcolor(color);
+    settextstyle(TRIPLEX_SCR_FONT, 0, 8);
+    outtextxy(240, 230, "Are you shure?");
+
+    settextstyle(SIMPLEX_FONT, 0, 2);
+    outtextxy(290, 350, "press enter to exit / press other to continue");
+}
+
+int main()
+{
+    int maxCount = loadMaxCount(); // Загружаем макс
+    initwindow(1000, 600); //создаем окно 
+    int x = 450;
+    int y = 450;
+    float x1 = rand() % 430 + 50; 
+    float y1 = 50;
+    drowback(x, y, 2);
+    drowfrukt(x1, y1, 11);
+    int count = initialCount; // ставим начальное значение 
+    char c;
+
+    while (1) //бесконечный цикл
+    {
+        schetchic(count, maxCount, 15);
+
+        if (kbhit()) //проверка нажатия клавиш
+        {
+            c = getch(); //нужна для чтения одного символа с клавиатуры
+            switch (c) //проверки строгого равенства
+            {
+            case 27:
+                saveMaxCount(maxCount); // Сохраняем максимальный счет перед выходом
+                realy(4);
+                if (getch() == VK_RETURN)
+                {
+                    closegraph(); // закрываем
+                    return 0;
+                }
+                realy(0);
+                break;
+            case 'a':
+                if (x > 11)
+                {
+                    drowback(x, y, 0);
+                    x = x - 10;
+                    drowback(x, y, 2);
+                }
+                break;
+            case 'd':
+                if (x < 800)
+                {
+                    drowback(x, y, 0);
+                    x = x + 10;
+                    drowback(x, y, 2);
+                }
+                break;
+            }
+        }
+
+        drowfrukt(x1, y1, 0);
+        y1 += 0.052;
+        drowfrukt(x1, y1, 11);
+        if (y1 > 480)
+        {
+            drowfrukt(x1, y1, 0);
+            x1 = rand() % 630 + 50;
+            y1 = 50;
+            die++;
+            if (die == 3)
+            {
+                deid(RED);
+                int t = getch();
+                while (t != 'R' && t != 'r' && t != 27)
+                {
+                    t = getch();
+                }
+                if (t == 'R' || t == 'r')
+                {
+                    count = initialCount; // Устанавливаем счетчик в начальное значение
+                    die = 0;
+                    if (count > maxCount)
+                    {
+                        maxCount = count;
+                    }
+                    closegraph();
+                    initwindow(1000, 600);
+                    drowback(x, y, 2);
+                    drowfrukt(x1, y1, 11);
+                }
+                else if (t == 27)
+                {
+                    saveMaxCount(maxCount); 
+                    closegraph();
+                    return 0;
+                }
+            }
+        }
+        if (x1 <= x + 150 && y1 >= y - 50 && x - 50 <= x1)
+        {
+            drowfrukt(x1, y1, 0);
+
+            x1 = rand() % 630 + 50;
+            y1 = 50;
+            count++;
+            if (count > maxCount)
+            {
+                maxCount = count;
+            }
+            printf("%d\n", count);
+            schetchic(count, maxCount, 0);
+        }
+    }
+    getchar(); //возвращает следующий символ из стандартного потока ввода
+    return 0;
+}
+//422
