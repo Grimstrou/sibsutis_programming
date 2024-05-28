@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\sfml_project1\\gamesfml\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{29F02747-AB3A-41D5-9513-4743FE2DE9F0}|gamesfml.vcxproj|D:\\sfml_project1\\gamesfml\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29F02747-AB3A-41D5-9513-4743FE2DE9F0}|gamesfml.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29F02747-AB3A-41D5-9513-4743FE2DE9F0}|gamesfml.vcxproj|D:\\sfml_project1\\gamesfml\\zombie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29F02747-AB3A-41D5-9513-4743FE2DE9F0}|gamesfml.vcxproj|solutionrelative:zombie.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29F02747-AB3A-41D5-9513-4743FE2DE9F0}|gamesfml.vcxproj|D:\\sfml_project1\\gamesfml\\pushka.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29F02747-AB3A-41D5-9513-4743FE2DE9F0}|gamesfml.vcxproj|solutionrelative:pushka.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29F02747-AB3A-41D5-9513-4743FE2DE9F0}|gamesfml.vcxproj|D:\\sfml_project1\\gamesfml\\pula.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{29F02747-AB3A-41D5-9513-4743FE2DE9F0}|gamesfml.vcxproj|solutionrelative:pula.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "pula.h",
+              "DocumentMoniker": "D:\\sfml_project1\\gamesfml\\pula.h",
+              "RelativeDocumentMoniker": "pula.h",
+              "ToolTip": "D:\\sfml_project1\\gamesfml\\pula.h",
+              "RelativeToolTip": "pula.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-05-06T06:57:46.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "pushka.h",
+              "DocumentMoniker": "D:\\sfml_project1\\gamesfml\\pushka.h",
+              "RelativeDocumentMoniker": "pushka.h",
+              "ToolTip": "D:\\sfml_project1\\gamesfml\\pushka.h",
+              "RelativeToolTip": "pushka.h",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-05-06T06:02:02.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "zombie.h",
+              "DocumentMoniker": "D:\\sfml_project1\\gamesfml\\zombie.h",
+              "RelativeDocumentMoniker": "zombie.h",
+              "ToolTip": "D:\\sfml_project1\\gamesfml\\zombie.h",
+              "RelativeToolTip": "zombie.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-05-06T04:27:43.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\sfml_project1\\gamesfml\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "D:\\sfml_project1\\gamesfml\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-18T06:43:00.126Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

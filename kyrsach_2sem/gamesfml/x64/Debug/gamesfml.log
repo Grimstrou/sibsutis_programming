@@ -1,0 +1,47 @@
+﻿  main.cpp
+D:\sfml_project1\gamesfml\zombie.h(24,25): warning C4305: аргумент: усечение из "double" в "float"
+  (компиляция исходного файла "main.cpp")
+  
+D:\sfml_project1\gamesfml\zombie.h(24,20): warning C4305: аргумент: усечение из "double" в "float"
+  (компиляция исходного файла "main.cpp")
+  
+D:\sfml_project1\gamesfml\zombie.h(43,29): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "main.cpp")
+  
+D:\sfml_project1\gamesfml\pushka.h(19,26): warning C4305: аргумент: усечение из "double" в "float"
+  (компиляция исходного файла "main.cpp")
+  
+D:\sfml_project1\gamesfml\pushka.h(19,20): warning C4305: аргумент: усечение из "double" в "float"
+  (компиляция исходного файла "main.cpp")
+  
+D:\sfml_project1\gamesfml\pushka.h(32,27): warning C4305: аргумент: усечение из "double" в "float"
+  (компиляция исходного файла "main.cpp")
+  
+D:\sfml_project1\gamesfml\pushka.h(32,21): warning C4305: аргумент: усечение из "double" в "float"
+  (компиляция исходного файла "main.cpp")
+  
+D:\sfml_project1\gamesfml\pushka.h(43,27): warning C4305: аргумент: усечение из "double" в "float"
+  (компиляция исходного файла "main.cpp")
+  
+D:\sfml_project1\gamesfml\pushka.h(43,21): warning C4305: аргумент: усечение из "double" в "float"
+  (компиляция исходного файла "main.cpp")
+  
+D:\sfml_project1\gamesfml\pula.h(18,26): warning C4305: аргумент: усечение из "double" в "float"
+  (компиляция исходного файла "main.cpp")
+  
+D:\sfml_project1\gamesfml\pula.h(18,20): warning C4305: аргумент: усечение из "double" в "float"
+  (компиляция исходного файла "main.cpp")
+  
+D:\sfml_project1\gamesfml\pula.h(29,29): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "main.cpp")
+  
+D:\sfml_project1\gamesfml\main.cpp(21,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\sfml_project1\gamesfml\main.cpp(26,28): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\sfml_project1\gamesfml\main.cpp(96,44): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\sfml_project1\gamesfml\main.cpp(98,44): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\sfml_project1\gamesfml\main.cpp(103,44): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\sfml_project1\gamesfml\main.cpp(105,44): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\sfml_project1\gamesfml\main.cpp(122,54): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\sfml_project1\gamesfml\main.cpp(147,44): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\sfml_project1\gamesfml\main.cpp(208,46): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  gamesfml.vcxproj -> D:\sfml_project1\gamesfml\x64\Debug\gamesfml.exe
